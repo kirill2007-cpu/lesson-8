@@ -10,6 +10,7 @@
     height: 50px;
     border-radius: 13px;
     margin-top: 14px;
+    outline: none;
 }
 
 .top {
@@ -28,30 +29,39 @@
 
 .line-1 {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     margin-bottom: 14px;
     margin-top: 41px;
 }
 
 .line-2 {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     margin-bottom: 14px;
 }
 
 .line-3 {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     margin-bottom: 14px;
 }
 
 .line-4 {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .btn {
     width: 43px;
     height: 39px;
     border-radius: 12px;
+}
+
+.bottom {
+    padding: 0px 32px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
 }

@@ -24,56 +24,109 @@ btn_1.addEventListener('click', function () {
 })
 
 btn_2.addEventListener('click', function () {
+  if (equalIsPushed) {
+    screen.value = ''
+    equalIsPushed = false
+  }
   screen.value = screen.value + '2';
 })
 
 btn_3.addEventListener('click', function () {
+  if (equalIsPushed) {
+    screen.value = ''
+    equalIsPushed = false
+  }
   screen.value = screen.value + '3';
 })
 
 btn_plus.addEventListener('click', function () {
+  if (equalIsPushed) {
+    screen.value = ''
+    equalIsPushed = false
+  }
   screen.value = screen.value + '+';
 })
 
 btn_4.addEventListener('click', function () {
+  if (equalIsPushed) {
+    screen.value = ''
+    equalIsPushed = false
+  }
   screen.value = screen.value + '4';
 })
 
 btn_5.addEventListener('click', function () {
+  if (equalIsPushed) {
+    screen.value = ''
+    equalIsPushed = false
+  }
   screen.value = screen.value + '5';
 })
 
 btn_6.addEventListener('click', function () {
+  if (equalIsPushed) {
+    screen.value = ''
+    equalIsPushed = false
+  }
   screen.value = screen.value + '6';
 })
 
 btn_minus.addEventListener('click', function () {
+  if (equalIsPushed) {
+    screen.value = ''
+    equalIsPushed = false
+  }
   screen.value = screen.value + '-';
 })
 
 btn_7.addEventListener('click', function () {
+  if (equalIsPushed) {
+    screen.value = ''
+    equalIsPushed = false
+  }
   screen.value = screen.value + '7';
 })
 
 btn_8.addEventListener('click', function () {
+  if (equalIsPushed) {
+    screen.value = ''
+    equalIsPushed = false
+  }
   screen.value = screen.value + '8';
 })
 
 btn_9.addEventListener('click', function () {
+  if (equalIsPushed) {
+    screen.value = ''
+    equalIsPushed = false
+  }
   screen.value = screen.value + '9';
 })
 
 btn_0.addEventListener('click', function () {
+  if (equalIsPushed) {
+    screen.value = ''
+    equalIsPushed = false
+  }
   screen.value = screen.value + '0';
 })
 
 btn_reset.addEventListener('click', function () {
+  if (equalIsPushed) {
+    screen.value = ''
+    equalIsPushed = false
+  }
   screen.value = '';
 })
 
 btn_equal.addEventListener('click', function () {
   let expr = screen.value
-  screen.value = eval(expr)
+  try {
+    screen.value = eval(expr)
+  } catch (error) {
+    screen.value = 'was error'
+
+  }
   equalIsPushed = true
 
 })
